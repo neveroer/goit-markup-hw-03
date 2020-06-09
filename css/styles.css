@@ -1,0 +1,234 @@
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --third-text-color: #ffffff;
+  --logo-color: #000000;
+  --accent-color: #2196f3;
+  --footer-adress-color: rgba(255, 255, 255, 0.6);
+  --footer-copyright-color: rgba(255, 255, 255, 0.4);
+  --primary-background-color: #e5e5e5;
+  --secondary-background-color: #f5f4fa;
+  --footer-background-color: #2f303a;
+  --main-font: "Roboto", sans-serif;
+  --accent-font: "Raleway", sans-serif;
+}
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+}
+/* хедер */
+/* лого */
+.logo {
+  text-decoration: none;
+  font-family: var(--accent-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--logo-color);
+}
+.logo:focus {
+  background-color: red;
+}
+.logo-web {
+  color: var(--accent-color);
+}
+/* думаю, лого не должен менять цвет после нажатия */
+.logo:visited {
+  color: var(--logo-color);
+}
+.logo-web:visited {
+  color: var(--accent-color);
+}
+/* навигация */
+.list {
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-list .list {
+  color: var(--secondary-text-color);
+}
+.nav-list .list:hover,
+.nav-list .list:focus {
+  color: var(--accent-color);
+}
+.address-list .list {
+  color: var(--primary-text-color);
+
+  font-style: normal;
+}
+.address-list .list:hover,
+.address-list .list:focus {
+  color: var(--accent-color);
+}
+/* hero */
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--third-text-color);
+  /* фон временный, чтобы было видно текст */
+  background-color: black;
+}
+.button {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--third-text-color);
+  background-color: var(--accent-color);
+}
+/* временный стиль, чтобы было видно кнопку при наведении и выборе с помощью клавиатуры */
+.button:hover,
+.button:focus {
+  color: var(--accent-color);
+  background-color: var(--third-text-color);
+}
+/* benefits section */
+
+.markers {
+  list-style: none;
+}
+.benefits-name {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+/* work-types section */
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+.work-types-list-item {
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--third-text-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
+/* team */
+.team-person {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  columns: var(--secondary-text-color);
+}
+.team-job {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+/* clients, на который не навесишь стили, пока нету свгшек */
+/* footer */
+.logo-studio {
+  color: var(--third-text-color);
+  /* фон временный, чтобы было видно текст */
+  background-color: black;
+}
+.footer-address {
+  font-style: normal;
+}
+.address-map {
+  color: var(--third-text-color);
+  /* фон временный, чтобы было видно текст */
+  background-color: black;
+}
+/* на макете нет, но решила отметить эффект наведения мышкой и клавиатурой */
+.address-map:hover,
+.address-map:focus,
+.mail-phone:hover,
+.mail-phone:focus {
+  color: black;
+  background-color: var(--third-text-color);
+}
+.mail-phone {
+  color: var(--footer-adress-color);
+  /* фон временный, чтобы было видно текст */
+  background-color: black;
+}
+
+.footer-call {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.copyright {
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  color: var(--footer-copyright-color);
+  /* фон временный, чтобы было видно текст */
+  background-color: black;
+}
+.subscribe {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* portfolio */
+/* projects */
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--accent-color);
+  color: var(--third-text-color);
+}
+.project-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+.project-name:hover,
+.project-name:focus {
+  color: var(--accent-color);
+}
+.project-type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-text-color);
+}
+.project-type:hover,
+.project-type:focus {
+  color: var(--accent-color);
+}
+.project-decription {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--third-text-color);
+  /* фон временный, чтобы было видно текст */
+  background-color: black;
+}
+.project-decription:hover,
+.project-decription:focus {
+  color: var(--accent-color);
+}
