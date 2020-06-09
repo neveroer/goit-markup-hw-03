@@ -12,6 +12,16 @@
   --main-font: "Roboto", sans-serif;
   --accent-font: "Raleway", sans-serif;
 }
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: var(--main-font);
   font-size: 14px;
@@ -19,10 +29,18 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
+
+  margin: 0;
+}
+.container {
+  width: 1600px;
+  margin: 0 auto;
 }
 /* хедер */
 /* лого */
-.logo {
+.logo,
+.logo-header,
+.portfolio-logo {
   text-decoration: none;
   font-family: var(--accent-font);
   font-weight: 700;
@@ -30,7 +48,8 @@ body {
   line-height: 1.19;
   color: var(--logo-color);
 }
-.logo:focus {
+.logo:focus,
+.portfolio-logo:focus {
   background-color: red;
 }
 .logo-web {
