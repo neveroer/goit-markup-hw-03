@@ -16,31 +16,31 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a class="logo" href="./index.html"
-          ><span class="logo-web">Web</span> Studio</a
-        >
-        <ul class="nav-list markers">
-          <li><a class="list" href="./index.html">Студия</a></li>
-          <li><a class="list" href="#">Портфолио</a></li>
-          <li><a class="list" href="#">Контакты</a></li>
-        </ul>
-      </nav>
-      <address>
-        <ul class="address-list markers">
-          <li>
-            <a class="list" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="list" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <nav>
+          <p class="logo-header"><span class="logo-web">Web</span> Studio</p>
+          <ul class="nav-list markers">
+            <li><a class="list" href="#">Студия</a></li>
+            <li><a class="list" href="./portfolio.html">Портфолио</a></li>
+            <li><a class="list" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <address>
+          <ul class="address-list markers">
+            <li>
+              <a class="list" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="list" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
     <main>
-      <section class="projects">
+      <section class="projects container">
         <h1 class="projects-title">Наши проекты</h1>
         <ul class="project-filter markers">
           <li><button type="button" class="filter-button">Все</button></li>
@@ -213,45 +213,55 @@
       </section>
     </main>
     <footer>
-      <a class="logo" href="./index.html"
-        ><span class="logo-web">Web</span
-        ><span class="logo-studio">Studio</span></a
-      >
-      <address class="footer-address">
-        <a class="address-map" href="https://goo.gl/maps/tR7T5dvsBJvdwT1U7"
-          >г. Киев, пр-т Леси Украинки, 26</a
+      <div class="container container-footer">
+        <a class="logo footer-logo" href="#"
+          ><span class="logo-web">Web</span
+          ><span class="logo-studio">Studio</span></a
         >
-        <br />
-        <a class="mail-phone" href="mailto:info@example.com"
-          >info@example.com</a
-        >
-        <br />
-        <a class="mail-phone" href="tel:+380991111111">+38 099 111 11 11</a>
-      </address>
-      <!-- социальные сети -->
-      <div>
-        <b class="footer-call">Присоединяйтесь</b>
-        <ul class="links-list markers">
-          <li>
-            <a href="#" aria-label="Ссылка на инстаграм"></a>
-          </li>
-          <li>
-            <a href="#" aria-label="Ссылка на твиттер"></a>
-          </li>
-          <li>
-            <a href="#" aria-label="Сслыка на фейсбук"></a>
-          </li>
-          <li>
-            <a href="#" aria-label="Ссылка на линкедин"></a>
-          </li>
-        </ul>
+        <address class="footer-address">
+          <a
+            class="address-map footer-address-links"
+            href="https://goo.gl/maps/tR7T5dvsBJvdwT1U7"
+            >г. Киев, пр-т Леси Украинки, 26</a
+          >
+          <br />
+          <a
+            class="mail-phone footer-address-links"
+            href="mailto:info@example.com"
+            >info@example.com</a
+          >
+          <br />
+          <a class="mail-phone footer-address-links" href="tel:+380991111111"
+            >+38 099 111 11 11</a
+          >
+        </address>
+        <!-- социальные сети -->
+        <div>
+          <b class="footer-call">Присоединяйтесь</b>
+          <ul class="links-list markers">
+            <li>
+              <a href="#" aria-label="Ссылка на инстаграм"></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Ссылка на твиттер"></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Сслыка на фейсбук"></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Ссылка на линкедин"></a>
+            </li>
+          </ul>
+        </div>
+        <!-- Форма подписки на рассылку -->
+        <div>
+          <b class="footer-call">Подпишитесь на рассылку</b>
+          <a class="button" href="#"
+            ><span class="subscribe">Подписаться</span></a
+          >
+        </div>
+        <p class="copyright" lang="en">2020 | Developed by GoIT Students</p>
       </div>
-      <!-- Форма подписки на рассылку -->
-      <div>
-        <b class="footer-call">Подпишитесь на рассылку</b>
-        <a class="button" href=""><span class="subscribe">Подписаться</span></a>
-      </div>
-      <p class="copyright" lang="en">2020 | Developed by GoIT Students</p>
     </footer>
   </body>
 </html>
