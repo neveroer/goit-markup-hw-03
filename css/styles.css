@@ -46,8 +46,7 @@ h4 {
 }
 /* хедер */
 /* лого */
-.logo,
-.logo-header {
+.logo {
   text-decoration: none;
   font-family: var(--accent-font);
   font-weight: 700;
@@ -58,19 +57,6 @@ h4 {
   display: inline-block;
   margin-top: 24px;
   margin-bottom: 25px;
-}
-.logo:focus {
-  background-color: red;
-}
-.logo-web {
-  color: var(--accent-color);
-}
-/* думаю, лого не должен менять цвет после нажатия */
-.logo:visited {
-  color: var(--logo-color);
-}
-.logo-web:visited {
-  color: var(--accent-color);
 }
 /* навигация */
 
@@ -210,6 +196,19 @@ h4 {
   margin: 0;
   margin-bottom: 8px;
 }
+.footer-logo:focus {
+  color: var(--accent-color);
+}
+.logo-web {
+  color: var(--accent-color);
+}
+/* думаю, лого не должен менять цвет после нажатия */
+.logo:visited {
+  color: var(--logo-color);
+}
+.logo-web:visited {
+  color: var(--accent-color);
+}
 .logo-studio {
   color: var(--third-text-color);
 }
@@ -222,14 +221,15 @@ h4 {
 .footer-address-links {
   display: inline-block;
   margin-bottom: 9pxs;
+
+  text-decoration: none;
 }
 /* на макете нет, но решила отметить эффект наведения мышкой и клавиатурой */
 .address-map:hover,
 .address-map:focus,
 .mail-phone:hover,
 .mail-phone:focus {
-  color: black;
-  background-color: var(--third-text-color);
+  color: var(--accent-color);
 }
 .mail-phone {
   color: var(--footer-adress-color);
@@ -238,6 +238,7 @@ h4 {
 .footer-call {
   font-weight: 700;
   text-transform: uppercase;
+  color: var(--third-text-color);
 }
 .copyright {
   margin: 0;
@@ -255,6 +256,10 @@ h4 {
   letter-spacing: 0.06em;
 }
 /* portfolio */
+/* logo */
+.portfolio-logo:focus {
+  color: var(--accent-color);
+}
 /* projects */
 .project-filter {
   margin: 0;
