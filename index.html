@@ -17,23 +17,25 @@
 
   <body>
     <header>
-      <div class="container">
-        <nav>
+      <div class="container main-header-flex">
+        <nav class="main-header-flex">
           <p class="logo"><span class="logo-web">Web</span> Studio</p>
           <ul class="nav-list markers">
-            <li><a class="list" href="#">Студия</a></li>
-            <li><a class="list" href="./portfolio.html">Портфолио</a></li>
-            <li><a class="list" href="#">Контакты</a></li>
+            <li class="list-item"><a class="list" href="#">Студия</a></li>
+            <li class="list-item">
+              <a class="list" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="list-item"><a class="list" href="#">Контакты</a></li>
           </ul>
         </nav>
         <address>
           <ul class="address-list markers">
-            <li>
+            <li class="address-link">
               <a class="list" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="address-link">
               <a class="list" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
@@ -55,7 +57,7 @@
           <!-- предполагаемый h2, который спрячем в цсс -->
           <h2>Преимущества</h2>
           <ul class="benefits-list markers">
-            <li>
+            <li class="benefits-link">
               <a href="#" aria-label="Антена"></a>
               <h3 class="benefits-name">Внимание к деталям</h3>
               <p class="benefits-description">
@@ -63,7 +65,7 @@
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="benefits-link">
               <a href="#" aria-label="Часы"></a>
               <h3 class="benefits-name">Пунктуальность</h3>
               <p class="benefits-description">
@@ -71,7 +73,7 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="benefits-link">
               <a href="#" aria-label="График"></a>
               <h3 class="benefits-name">Планирование</h3>
               <p class="benefits-description">
@@ -79,7 +81,7 @@
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="benefits-link">
               <a href="#" aria-label="Астронавт"></a>
               <h3 class="benefits-name">Современные технологии</h3>
               <p class="benefits-description">
@@ -95,7 +97,7 @@
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="work-types-list markers">
-            <li>
+            <li class="work-types-link">
               <img
                 src="./images/desktop.jpg"
                 alt="Экран ноутбука"
@@ -104,7 +106,7 @@
               />
               <h3 class="work-types-list-item">Десктопные приложения</h3>
             </li>
-            <li>
+            <li class="work-types-link">
               <img
                 src="./images/mobile.jpg"
                 alt="Мобильный телефон"
@@ -113,7 +115,7 @@
               />
               <h3 class="work-types-list-item">Мобильные приложения</h3>
             </li>
-            <li>
+            <li class="work-types-link">
               <img
                 src="./images/design.jpg"
                 alt="Компьютер с картинкой"
@@ -130,8 +132,9 @@
         <div class="container team-padding">
           <h2 class="title">Наша команда</h2>
           <ul class="team-list markers">
-            <li>
+            <li class="team-list-link">
               <img
+                class="team-photo"
                 src="./images/john-smith.jpg"
                 alt="John Smith"
                 width="270"
@@ -154,8 +157,9 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="team-list-link">
               <img
+                class="team-photo"
                 src="./images/marta-stewart.jpg"
                 alt="Marta Stewart"
                 width="270"
@@ -178,8 +182,9 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="team-list-link">
               <img
+                class="team-photo"
                 src="./images/robert-jakis.jpg"
                 alt="Robert Jakis"
                 width="270"
@@ -202,8 +207,9 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="team-list-link">
               <img
+                class="team-photo"
                 src="./images/martin-doe.jpg"
                 alt="Martin Doe"
                 width="270"
@@ -256,53 +262,60 @@
         </div>
       </section>
     </main>
+    <!-- footer -->
     <footer>
       <div class="container container-footer">
-        <a class="logo footer-logo" href="#"
-          ><span class="logo-web">Web</span
-          ><span class="logo-studio">Studio</span></a
-        >
-        <address class="footer-address">
-          <a
-            class="address-map footer-address-links"
-            href="https://goo.gl/maps/tR7T5dvsBJvdwT1U7"
-            >г. Киев, пр-т Леси Украинки, 26</a
-          >
-          <br />
-          <a
-            class="mail-phone footer-address-links"
-            href="mailto:info@example.com"
-            >info@example.com</a
-          >
-          <br />
-          <a class="mail-phone footer-address-links" href="tel:+380991111111"
-            >+38 099 111 11 11</a
-          >
-        </address>
-        <!-- социальные сети -->
-        <div>
-          <b class="footer-call">Присоединяйтесь</b>
-          <ul class="links-list markers">
-            <li>
-              <a href="#" aria-label="Ссылка на инстаграм"></a>
-            </li>
-            <li>
-              <a href="#" aria-label="Ссылка на твиттер"></a>
-            </li>
-            <li>
-              <a href="#" aria-label="Сслыка на фейсбук"></a>
-            </li>
-            <li>
-              <a href="#" aria-label="Ссылка на линкедин"></a>
-            </li>
-          </ul>
-        </div>
-        <!-- Форма подписки на рассылку -->
-        <div>
-          <b class="footer-call">Подпишитесь на рассылку</b>
-          <a class="button" href="#"
-            ><span class="subscribe">Подписаться</span></a
-          >
+        <div class="footer-flex">
+          <div class="footer-address">
+            <a class="logo footer-logo" href="#"
+              ><span class="logo-web">Web</span
+              ><span class="logo-studio">Studio</span></a
+            >
+            <address class="footer-address">
+              <a
+                class="address-map footer-address-links"
+                href="https://goo.gl/maps/tR7T5dvsBJvdwT1U7"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+              <br />
+              <a
+                class="mail-phone footer-address-links"
+                href="mailto:info@example.com"
+                >info@example.com</a
+              >
+              <br />
+              <a
+                class="mail-phone footer-address-links"
+                href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
+            </address>
+          </div>
+          <!-- социальные сети -->
+          <div>
+            <b class="footer-call">Присоединяйтесь</b>
+            <ul class="links-list markers">
+              <li>
+                <a href="#" aria-label="Ссылка на инстаграм"></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Ссылка на твиттер"></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Сслыка на фейсбук"></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Ссылка на линкедин"></a>
+              </li>
+            </ul>
+          </div>
+          <!-- Форма подписки на рассылку -->
+          <div class="subscribe-form">
+            <b class="footer-call">Подпишитесь на рассылку</b>
+            <a class="button" href="#"
+              ><span class="subscribe">Подписаться</span></a
+            >
+          </div>
         </div>
         <p class="copyright" lang="en">2020 | Developed by GoIT Students</p>
       </div>

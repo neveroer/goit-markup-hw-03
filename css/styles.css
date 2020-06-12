@@ -38,44 +38,76 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.container:last-child {
+  margin-bottom: 0;
+}
+.main-header-flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
 h1,
 h2,
 h3,
 h4 {
   margin: 0;
 }
+.markers {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 /* хедер */
 /* лого */
 .logo {
+  display: inline-block;
+  margin-bottom: 25px;
+  margin-right: 85px;
+
   text-decoration: none;
   font-family: var(--accent-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--logo-color);
-
-  display: inline-block;
-  margin-top: 24px;
-  margin-bottom: 25px;
 }
 /* навигация */
-
+.nav-list {
+  display: flex;
+}
 .list {
   text-decoration: none;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.nav-list .list {
+.nav-list .list-item {
+  margin-right: 50px;
+
   color: var(--secondary-text-color);
+}
+.nav-list .list-item:last-child {
+  margin-right: 0;
 }
 .nav-list .list:hover,
 .nav-list .list:focus {
   color: var(--accent-color);
 }
+.nav-list a {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.address-list {
+  display: flex;
+  margin-left: auto;
+}
+.address-link {
+  margin-right: 30px;
+}
 .address-list .list {
   color: var(--primary-text-color);
-
   font-style: normal;
 }
 .address-list .list:hover,
@@ -115,7 +147,6 @@ h4 {
   padding: 10px 32px;
   min-width: 200px;
 }
-/* временный стиль, чтобы было видно кнопку при наведении и выборе с помощью клавиатуры */
 .button:hover,
 .button:focus {
   color: var(--accent-color);
@@ -123,12 +154,13 @@ h4 {
   border-color: var(--accent-color);
 }
 /* benefits section */
-
-.markers {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.benefits-list {
+  display: flex;
 }
+.benefits-link:not(:last-child) {
+  margin-right: 30px;
+}
+
 .benefits-name {
   font-weight: 700;
   line-height: 1.14;
@@ -141,6 +173,13 @@ h4 {
   margin: 0;
 }
 /* work-types section */
+.work-types-list {
+  display: flex;
+}
+.work-types-link:not(:last-child) {
+  margin-right: 30px;
+}
+
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -163,6 +202,15 @@ h4 {
   max-width: 370px;
 }
 /* team */
+.team-list {
+  display: flex;
+}
+.team-list-link:not(:last-child) {
+  margin-right: 30px;
+}
+.team-photo {
+  margin-bottom: 10px;
+}
 .team-padding {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -173,7 +221,7 @@ h4 {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  columns: var(--secondary-text-color);
+  color: var(--secondary-text-color);
 
   margin-bottom: 10px;
 }
@@ -191,6 +239,13 @@ h4 {
 .container-footer {
   background-color: var(--footer-background-color);
   padding-top: 45px;
+}
+.footer-flex {
+  display: flex;
+  align-items: flex-start;
+}
+.subscribe-form {
+  margin-left: auto;
 }
 .footer-logo {
   margin: 0;
@@ -262,28 +317,42 @@ h4 {
 }
 /* projects */
 .project-filter {
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
   margin-bottom: 50px;
 }
 .filter-button {
+  display: inline-block;
+
+  padding: 6px 22px;
+  min-width: 73px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
   color: var(--secondary-text-color);
 
-  display: inline-block;
   background-color: var(--secondary-background-color);
   border: 1px solid transparent;
   border-radius: 4px;
-  padding: 6px 22px;
-  min-width: 73px;
+}
+.button-list {
+  margin-right: 8px;
+}
+.button-list:last-child {
+  margin-right: 0;
 }
 .filter-button:hover,
 .filter-button:focus {
   background-color: var(--accent-color);
   color: var(--third-text-color);
   border-color: var(--accent-color);
+}
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 .project-name {
   font-weight: 700;
@@ -298,13 +367,20 @@ h4 {
 .project-name:focus {
   color: var(--accent-color);
 }
+.project-example {
+  width: calc(100% - (30 * 2) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.project-example:nth-child(3n) {
+  margin-bottom: 0;
+  margin-right: 0;
+}
 .project-type {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);
-
-  margin: 0;
 }
 .project-type:hover,
 .project-type:focus {
