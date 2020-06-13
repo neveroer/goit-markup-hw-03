@@ -44,7 +44,7 @@ body {
 .main-header-flex {
   display: flex;
   align-items: center;
-  margin-bottom: 0;
+  justify-content: space-between;
 }
 
 h1,
@@ -62,7 +62,6 @@ h4 {
 /* лого */
 .logo {
   display: inline-block;
-  margin-bottom: 25px;
   margin-right: 85px;
 
   text-decoration: none;
@@ -241,12 +240,12 @@ h4 {
   padding-top: 45px;
 }
 .footer-flex {
+  margin-bottom: 68px;
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
 }
-.subscribe-form {
-  margin-left: auto;
-}
+
 .footer-logo {
   margin: 0;
   margin-bottom: 8px;
@@ -291,9 +290,20 @@ h4 {
 }
 
 .footer-call {
+  display: block;
+  margin-bottom: 20px;
+
   font-weight: 700;
   text-transform: uppercase;
   color: var(--third-text-color);
+}
+.email {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--footer-background-color);
+  margin-right: 12px;
 }
 .copyright {
   margin: 0;
