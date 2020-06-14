@@ -31,7 +31,7 @@ body {
   background-color: var(--primary-background-color);
 }
 .container {
-  width: 1200px;
+  width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 94px;
@@ -393,7 +393,7 @@ footer {
   color: var(--accent-color);
 }
 .project-example {
-  width: calc(100% - (30 * 2) / 3);
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
