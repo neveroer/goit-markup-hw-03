@@ -38,13 +38,11 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.container:last-child {
-  margin-bottom: 0;
-}
 .main-header-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 0;
 }
 
 h1,
@@ -152,6 +150,9 @@ h4 {
   background-color: var(--third-text-color);
   border-color: var(--accent-color);
 }
+.order {
+  margin-bottom: 294px;
+}
 /* benefits section */
 .benefits-list {
   display: flex;
@@ -238,6 +239,7 @@ h4 {
 .container-footer {
   background-color: var(--footer-background-color);
   padding-top: 45px;
+  margin-bottom: 0;
 }
 .footer-flex {
   margin-bottom: 68px;
