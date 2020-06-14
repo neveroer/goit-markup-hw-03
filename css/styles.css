@@ -150,9 +150,6 @@ h4 {
   background-color: var(--third-text-color);
   border-color: var(--accent-color);
 }
-.order {
-  margin-bottom: 294px;
-}
 /* benefits section */
 .benefits-list {
   display: flex;
