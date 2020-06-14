@@ -113,9 +113,19 @@ h4 {
 }
 /* hero */
 .hero {
+  padding-top: 200px;
+  padding-bottom: auto;
+  padding-left: auto;
+  padding-right: auto;
+  margin-bottom: 94px;
+
   text-align: center;
+  background-color: #757575;
+  height: 600px;
 }
 .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -123,10 +133,6 @@ h4 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--third-text-color);
-  /* фон временный, чтобы было видно текст */
-  background-color: black;
-
-  margin-bottom: 30px;
 }
 .button {
   text-decoration: none;
