@@ -85,6 +85,9 @@ p {
 
   color: var(--secondary-text-color);
 }
+.nav-list .list:visited {
+  color: var(--secondary-text-color);
+}
 .nav-list .list-item:last-child {
   margin-right: 0;
 }
@@ -92,6 +95,7 @@ p {
 .nav-list .list:focus {
   color: var(--accent-color);
 }
+
 .nav-list a {
   display: block;
   padding-top: 32px;
@@ -240,8 +244,10 @@ p {
 }
 /* clients, на который не навесишь стили, пока нету свгшек */
 /* footer */
-.container-footer {
+footer {
   background-color: var(--footer-background-color);
+}
+.container-footer {
   padding-top: 45px;
   margin-bottom: 0;
 }
