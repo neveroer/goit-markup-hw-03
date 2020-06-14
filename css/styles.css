@@ -48,7 +48,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+p {
   margin: 0;
 }
 .markers {
@@ -331,6 +332,9 @@ h4 {
   color: var(--accent-color);
 }
 /* projects */
+.projects {
+  margin-top: 94px;
+}
 .project-filter {
   display: flex;
   justify-content: center;
@@ -392,6 +396,8 @@ h4 {
   margin-right: 0;
 }
 .project-type {
+  margin-bottom: 20px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
