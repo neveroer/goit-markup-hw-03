@@ -46,7 +46,6 @@ body {
   padding-bottom: 0;
   padding-top: 0;
 }
-
 h1,
 h2,
 h3,
@@ -264,6 +263,7 @@ footer {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-logo {
@@ -344,6 +344,9 @@ footer {
 }
 /* portfolio */
 /* logo */
+.line {
+  border: 1px solid #ececec;
+}
 .portfolio-logo:focus {
   color: var(--accent-color);
 }
