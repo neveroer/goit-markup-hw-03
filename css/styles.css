@@ -317,10 +317,11 @@ footer {
   background-color: var(--footer-background-color);
   margin-right: 12px;
 }
-.copyright {
+.copyright-container {
   padding-top: 18px;
   padding-bottom: 21px;
-
+}
+.copyright {
   font-size: 12px;
   line-height: 2;
   text-align: center;
