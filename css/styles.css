@@ -255,7 +255,7 @@ footer {
 .footer-flex {
   padding-bottom: 28px;
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
   justify-content: space-between;
 }
 
@@ -318,11 +318,11 @@ footer {
   background-color: var(--footer-background-color);
   margin-right: 12px;
 }
-.copyright-container {
+
+.copyright {
   padding-top: 18px;
   padding-bottom: 21px;
-}
-.copyright {
+
   font-size: 12px;
   line-height: 2;
   text-align: center;
