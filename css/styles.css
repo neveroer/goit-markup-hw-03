@@ -220,6 +220,7 @@ p {
   padding-bottom: 24px;
 }
 .team-photo {
+  display: block;
   margin-bottom: 10px;
 }
 .team {
@@ -392,6 +393,7 @@ footer {
   margin-right: 0;
 }
 .project-photo {
+  display: block;
   margin-bottom: 20px;
 }
 .project-name {
