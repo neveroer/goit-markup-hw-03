@@ -249,7 +249,7 @@ footer {
 }
 .container-footer {
   padding-top: 45px;
-  padding-bottom: 21px;
+  padding-bottom: 0;
 }
 .footer-flex {
   padding-bottom: 28px;
@@ -319,6 +319,8 @@ footer {
 }
 .copyright {
   padding-top: 18px;
+  padding-bottom: 21px;
+
   font-size: 12px;
   line-height: 2;
   text-align: center;
