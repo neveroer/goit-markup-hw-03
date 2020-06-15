@@ -382,6 +382,18 @@ footer {
   display: flex;
   flex-wrap: wrap;
 }
+.project-example {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.project-example:nth-child(3n) {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+.project-photo {
+  margin-bottom: 20px;
+}
 .project-name {
   font-weight: 700;
   font-size: 18px;
@@ -394,15 +406,6 @@ footer {
 .project-name:hover,
 .project-name:focus {
   color: var(--accent-color);
-}
-.project-example {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-.project-example:nth-child(3n) {
-  margin-bottom: 0;
-  margin-right: 0;
 }
 .project-type {
   margin-bottom: 20px;
@@ -422,7 +425,7 @@ footer {
   line-height: 1.56;
   color: var(--third-text-color);
   /* фон временный, чтобы было видно текст */
-  background-color: black;
+  background-color: rgb(85, 78, 78);
 }
 .project-decription:hover,
 .project-decription:focus {
