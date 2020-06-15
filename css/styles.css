@@ -81,6 +81,7 @@ p {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: block;
 }
 .nav-list .list-item {
   margin-right: 50px;
@@ -394,7 +395,15 @@ footer {
 }
 .project-photo {
   display: block;
-  margin-bottom: 20px;
+}
+.project-content {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 .project-name {
   font-weight: 700;
@@ -410,8 +419,6 @@ footer {
   color: var(--accent-color);
 }
 .project-type {
-  margin-bottom: 20px;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
