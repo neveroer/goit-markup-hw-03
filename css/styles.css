@@ -217,11 +217,12 @@ p {
 }
 .team-list-link:not(:last-child) {
   margin-right: 30px;
+  padding-bottom: 24px;
 }
 .team-photo {
   margin-bottom: 10px;
 }
-.team-padding {
+.team {
   background-color: var(--secondary-background-color);
 }
 .team-person {
