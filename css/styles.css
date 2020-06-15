@@ -34,7 +34,8 @@ body {
   width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
+  padding-top: 94px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -42,7 +43,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 h1,
@@ -119,10 +121,7 @@ p {
 /* hero */
 .hero {
   padding-top: 200px;
-  padding-bottom: auto;
-  padding-left: auto;
-  padding-right: auto;
-  margin-bottom: 94px;
+  padding-bottom: 200px;
 
   text-align: center;
   background-color: #757575;
@@ -162,6 +161,9 @@ p {
   border-color: var(--accent-color);
 }
 /* benefits section */
+.container-benefits {
+  padding-bottom: 0;
+}
 .benefits-list {
   display: flex;
 }
@@ -220,8 +222,6 @@ p {
   margin-bottom: 10px;
 }
 .team-padding {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: var(--secondary-background-color);
 }
 .team-person {
@@ -249,10 +249,10 @@ footer {
 }
 .container-footer {
   padding-top: 45px;
-  margin-bottom: 0;
+  padding-bottom: 21px;
 }
 .footer-flex {
-  margin-bottom: 68px;
+  padding-bottom: 28px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -318,8 +318,7 @@ footer {
   margin-right: 12px;
 }
 .copyright {
-  margin: 0;
-
+  padding-top: 18px;
   font-size: 12px;
   line-height: 2;
   text-align: center;
@@ -339,7 +338,7 @@ footer {
 }
 /* projects */
 .projects {
-  margin-top: 94px;
+  padding-top: 94px;
 }
 .project-filter {
   display: flex;
