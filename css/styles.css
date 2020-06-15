@@ -214,9 +214,9 @@ p {
 /* team */
 .team-list {
   display: flex;
+  justify-content: space-between;
 }
 .team-list-link:not(:last-child) {
-  margin-right: 30px;
   padding-bottom: 24px;
 }
 .team-photo {
