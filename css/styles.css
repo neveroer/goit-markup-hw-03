@@ -191,10 +191,15 @@ img {
 .work-types-list {
   display: flex;
 }
+.work-types-link {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
 .work-types-link:not(:last-child) {
   margin-right: 30px;
 }
-
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -222,6 +227,8 @@ img {
 }
 /* начала только разбираться с бордером єтим и тенью, вижу, что куски картинки сверху торчат и из еще надо спрятать */
 .team-list-link {
+  width: calc((100% - 90px) / 4);
+
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
